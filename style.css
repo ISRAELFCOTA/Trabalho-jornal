@@ -1,0 +1,134 @@
+body {
+    margin: 0;
+    min-height: 100vh;
+    background: #ECD7D5;
+}
+/*cabeçalho*/
+header, h1 {
+    background-color: #9b6161;
+    color: rgb(46, 24, 24);
+    padding: 8px;
+    padding-bottom: 35px;
+    text-align: center;
+    font-family: Arial;
+}
+
+.container {
+    display: inline-flex;
+}
+
+.container .estatico {
+    color: #fff;
+    font-size: 60px;
+    font-weight: 300;
+}
+
+.container .dinamico {
+    margin-left: 15px;
+}
+
+.dinamico li {
+    color: #692e2e;
+    list-style: none;
+    font-size: 60px;
+    font-weight: 400;    
+}
+
+.dinamico li span::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    border-left: 2px solid #692e2e;
+    animation: typing 1.5s steps(10) infinite;
+    background: #9b6161;
+}
+
+.dinamico li span {
+    position: relative;
+}
+@keyframes typing{
+    100%{
+        left:100%;
+        margin: 0 -35px 0 35px;
+    }
+}
+
+/*Conteudo*/
+
+section, article {
+    font-family: Arial;
+    padding: 40px;
+}
+
+iframe:focus {
+    outline: none;
+}
+
+/*Parte do menu*/
+
+.menu li{
+    position: relative;
+    list-style: none;
+    border:1px solid #c0c0c0;
+    float: left;
+}
+
+.menu li a {
+    text-decoration: none;
+    color: black;
+    padding: 5px 10px;
+    display: block;
+    
+}
+
+.menu li a:hover {
+    background-color: rgb(75, 27, 27);
+    color: #fff;
+    text-shadow:0px 0px 5px #CCC;
+}
+
+
+/*Link visitado*/
+
+section a {
+    text-decoration: none;
+    color: white;
+}
+
+section a:link {
+
+    border: 1px solid #c0c0c0;
+    background-color: rgb(54, 17, 17);
+    text-shadow:0px 0px 5px #ccc;
+}
+
+section a:visited {
+    border: 1px solid #c0c0c0;
+    background-color: rgb(175, 65, 65);
+    text-shadow:0px 0px 5px #ccc;
+}
+
+/*Segunda nóticia*/
+
+article {
+    font-family: Arial;
+}
+
+
+/*Rodapé*/
+footer {
+    background-color: rgb(75, 27, 27);
+    color: white;
+    text-align: center;
+    font-family: Arial;
+    padding: 8px;
+}
+
+footer a {
+    text-decoration: none;
+    color: white;
+    font-family: Arial;
+}
+
